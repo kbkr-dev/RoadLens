@@ -13,6 +13,7 @@ import {
   Zap,
 } from 'lucide-react';
 import Stats from '@/components/Stats';
+import ImageCarousel from "@/components/ImageCarousel";
 import ServicesPreview from '@/components/ServicesPreview';
 import ProjectsPreview from '@/components/ProjectsPreview';
 import NewsPreview from '@/components/NewsPreview';
@@ -123,15 +124,15 @@ export default function Home() {
               className="text-4xl sm:text-5xl lg:text-7xl font-bold font-heading text-white leading-[1.1] mb-6"
             >
               See the Road{' '}
-              <span className="relative inline-block">
-                <span className="gradient-text">Clearly</span>
-                <motion.div
-                  initial={{ width: 0 }}
-                  animate={{ width: '100%' }}
-                  transition={{ duration: 0.8, delay: 1 }}
-                  className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-accent to-cyan rounded-full"
-                />
-              </span>
+              <span className="relative inline-block pb-2 sm:pb-3">
+  <span className="gradient-text relative z-10">Clearly</span>
+  <motion.div
+    initial={{ width: 0 }}
+    animate={{ width: '100%' }}
+    transition={{ duration: 0.8, delay: 1 }}
+    className="absolute bottom-0 left-0 h-[3px] sm:h-[4px] bg-gradient-to-r from-accent to-cyan rounded-full"
+  />
+</span>
               <br />
               With Data That <span className="text-accent">Drives</span> Decisions
             </motion.h1>
@@ -214,6 +215,9 @@ export default function Home() {
 
       {/* STATS */}
       <Stats />
+
+      {/* IMAGE CAROUSEL */}
+      <ImageCarousel />
 
       {/* WHO WE ARE */}
       <section className="py-24 bg-white mesh-gradient">
