@@ -58,11 +58,10 @@ const takeaways = [
 const countriesCovered = ['UK', 'USA', 'Australia', 'Dubai', 'Europe', 'India'];
 
 const timeline = [
-  { year: '2014', event: 'Founded in Bangalore with a vision for global traffic data excellence' },
-  { year: '2016', event: 'Expanded to serve clients across USA, UK, and Australia' },
-  { year: '2018', event: 'Reached 100+ projects milestone with operations in 15+ countries' },
-  { year: '2020', event: 'Launched AI-powered video analytics platform for traffic analysis' },
-  { year: '2022', event: 'Opened USA office in Texas, 250+ professionals strong' },
+  { year: '2018', event: 'Founded in Bangalore with a vision for global traffic data excellence' },
+  { year: '2019', event: 'Expanded to serve clients across USA, UK, and Australia' },
+  { year: '2020', event: 'Reached 100+ projects milestone with operations in 15+ countries' },
+  { year: '2021', event: 'Launched AI-powered video analytics platform for traffic analysis' },
   { year: '2024', event: 'Surpassed 50,000 projects completed across 30+ countries' },
   { year: '2026', event: 'Rebranded as RoadLens - Next-gen traffic intelligence platform' },
 ];
@@ -288,67 +287,6 @@ export default function AboutPage() {
           </div>
 
           <p className="text-center text-muted mt-6">& many more countries worldwide</p>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section id="team" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection className="text-center mb-16">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-cyan/10 text-cyan-dark text-sm font-semibold rounded-full mb-4">
-              Our People
-            </span>
-            <h2 className="text-3xl md:text-5xl font-bold font-heading text-primary mb-4">
-              The <span className="gradient-text">Team</span>
-            </h2>
-            <p className="text-muted max-w-2xl mx-auto text-lg">
-              Our team carries a mix of experience and fresh enthusiasm that drives excellence in every traffic data
-              extraction project.
-            </p>
-          </AnimatedSection>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { name: 'Arjun Sharma', role: 'Founder & CEO', gradient: 'from-accent to-orange-300' },
-              { name: 'Priya Desai', role: 'Director of Operations', gradient: 'from-cyan to-blue-300' },
-              { name: 'Michael Chen', role: 'Head of Analytics', gradient: 'from-violet to-purple-300' },
-              { name: 'Sarah Williams', role: 'VP, USA Operations', gradient: 'from-emerald to-green-300' },
-            ].map((member, i) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="group"
-              >
-                <div
-                  className={`h-56 rounded-2xl bg-gradient-to-br ${member.gradient} mb-4 relative overflow-hidden`}
-                >
-                  <div className="absolute inset-0 bg-black/5 group-hover:bg-black/10 transition-colors" />
-                  <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-white/10 rounded-full" />
-                  <div className="absolute -top-4 -left-4 w-20 h-20 bg-white/10 rounded-full" />
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <div className="bg-white/20 backdrop-blur-sm rounded-xl p-3">
-                      <Globe className="w-5 h-5 text-white" />
-                    </div>
-                  </div>
-                </div>
-                <h4 className="font-bold text-primary">{member.name}</h4>
-                <p className="text-muted text-sm">{member.role}</p>
-              </motion.div>
-            ))}
-          </div>
-
-          <AnimatedSection className="text-center mt-12">
-            <Link
-              href="/careers"
-              className="inline-flex items-center gap-2 text-accent font-semibold hover:gap-3 transition-all group"
-            >
-              Join Our Growing Team
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </AnimatedSection>
         </div>
       </section>
     </>

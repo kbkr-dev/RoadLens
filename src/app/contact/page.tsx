@@ -20,20 +20,12 @@ const offices = [
 	{
 		name: "INDIA HQ",
 		address: "RoadLens Analytics HQ, Tech District, Bangalore 560068, Karnataka, India",
-		phone: "+91 98765 43210",
+		phone: "+91 8904795716",
 		landline: "080 4091 1824",
-		email: "hello@roadlens.com",
+		email: "sales@roadlensanalytics.com",
 		hours: "Mon–Sat: 9:00 AM – 7:00 PM IST",
 		gradient: "from-accent to-orange-400",
-	},
-	{
-		name: "USA Office",
-		address: "RoadLens Inc, 235 NE Loop 820, Ste 206, Hurst, Texas 76053",
-		phone: "+1 945 215 0024",
-		email: "usa@roadlens.com",
-		hours: "Mon–Fri: 9:00 AM – 6:00 PM CST",
-		gradient: "from-cyan-500 to-blue-400",
-	},
+	}
 ];
 
 const branchoffices = ["Hyderabad", "Mumbai", "Vijayawada", "Chennai"];
@@ -216,7 +208,7 @@ export default function ContactPage() {
 							<MapPin className="w-12 h-12 text-accent mx-auto mb-4" />
 							<p className="text-muted font-medium">Interactive Map</p>
 							<p className="text-muted-light text-sm mt-1">
-								Bangalore, India | Hurst, Texas, USA
+								Bangalore, India
 							</p>
 						</div>
 					</div>
@@ -231,20 +223,20 @@ export default function ContactPage() {
 							{
 								icon: Phone,
 								label: "Call Us",
-								value: "+91 98765 43210",
-								subValue: "+1 945 215 0024",
+								value: "+91 8904795716",
+								subValue: "",
 							},
 							{
 								icon: Mail,
 								label: "Email Us",
-								value: "hello@roadlens.com",
-								subValue: "enquiries@roadlens.com",
+								value: "sales@roadlensanalytics.com",
+								subValue: "",
 							},
 							{
 								icon: Clock,
 								label: "Working Hours",
 								value: "Mon–Sat: 9:00 AM – 7:00 PM",
-								subValue: "IST / CST",
+								subValue: "",
 							},
 						].map((item, i) => (
 							<motion.div

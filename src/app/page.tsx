@@ -104,17 +104,6 @@ export default function Home() {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-0">
           <div className="max-w-3xl">
-            {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm border border-white/10 text-white/80 text-sm rounded-full mb-8">
-                <span className="w-2 h-2 bg-emerald rounded-full animate-pulse" />
-                Global Coverage with Local Support
-              </span>
-            </motion.div>
 
             {/* Heading */}
             <motion.h1
@@ -331,15 +320,6 @@ export default function Home() {
                     <p className="text-muted text-sm">
                       RoadLens Analytics HQ, Tech District, Bangalore 560068, Karnataka, India
                     </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-cyan/10 rounded-xl flex items-center justify-center shrink-0">
-                    <MapPin className="w-5 h-5 text-cyan" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-primary mb-1">USA Office</h4>
-                    <p className="text-muted text-sm">RoadLens Inc, 235 NE Loop 820, Ste 206, Hurst, Texas 76053</p>
                   </div>
                 </div>
               </div>

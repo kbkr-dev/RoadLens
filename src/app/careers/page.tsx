@@ -46,16 +46,6 @@ const openings = [
     gradient: 'from-violet to-purple-400',
   },
   {
-    title: 'Business Development Manager USA',
-    department: 'Sales',
-    location: 'Hurst, Texas, USA',
-    type: 'Full-time',
-    experience: '5+ years',
-    description:
-      'Drive business growth in the North American market. Build relationships with transport authorities, consultants, and DOTs to expand our offshore analysis services.',
-    gradient: 'from-emerald to-green-400',
-  },
-  {
     title: 'Video Analytics Engineer',
     department: 'Technology',
     location: 'Bangalore, India (Hybrid)',
