@@ -100,6 +100,11 @@ export default function ContactForm({ variant = 'default' }: ContactFormProps) {
         });
       }, 2000);
 
+      await fetch('/api/notify', {
+  method: 'POST',
+  body: JSON.stringify(formData),
+});
+
     } catch (err) {
       console.error(err);
       setFormState('idle');
